@@ -1,6 +1,6 @@
 {
   "name": "ezchangelog",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Create a transform to parse outputs from git log",
   "bin": {
     "ezchangelog": "./bin/ezchangelog.js"
