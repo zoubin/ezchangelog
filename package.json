@@ -1,0 +1,38 @@
+{
+  "name": "ezchangelog",
+  "version": "0.0.1",
+  "description": "Create a transform to parse outputs from git log",
+  "bin": {
+    "ezchangelog": "./bin/ezchangelog.js"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoubin/ezchangelog.git"
+  },
+  "keywords": [
+    "git",
+    "log",
+    "changelog"
+  ],
+  "author": "zoubin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoubin/ezchangelog/issues"
+  },
+  "homepage": "https://github.com/zoubin/ezchangelog#readme",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "split2": "^1.0.0",
+    "stream-combiner2": "^1.1.1",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "callback-sequence": "^1.2.1",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0"
+  }
+}
