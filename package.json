@@ -1,6 +1,6 @@
 {
   "name": "ezchangelog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "changelog",
   "bin": {
     "ezchangelog": "./bin/ezchangelog.js"
