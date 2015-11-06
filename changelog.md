@@ -1,4 +1,10 @@
-<!-- LATEST 9138646 -->
+<!-- LATEST 9191ac0 -->
+
+* [ 2015-11-06 [9191ac0](https://github.com/zoubin/ezchangelog/commit/9191ac0) ] fix example link in readme
+
+* [ 2015-11-06 [f150c39](https://github.com/zoubin/ezchangelog/commit/f150c39) ] add example section in readme
+
+* [ 2015-11-06 [9010dff](https://github.com/zoubin/ezchangelog/commit/9010dff) ] CHANGELOG
 
 ## [v3.0.0](https://github.com/zoubin/ezchangelog/commit/9138646) (2015-11-06)
 
