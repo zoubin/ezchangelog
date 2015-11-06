@@ -1,4 +1,8 @@
-<!-- LATEST 9191ac0 -->
+<!-- LATEST 4a22842 -->
+
+## [v3.0.1](https://github.com/zoubin/ezchangelog/commit/4a22842) (2015-11-06)
+
+* [ [728e8e7](https://github.com/zoubin/ezchangelog/commit/728e8e7) ] Example section in readme
 
 * [ 2015-11-06 [9191ac0](https://github.com/zoubin/ezchangelog/commit/9191ac0) ] fix example link in readme
 
