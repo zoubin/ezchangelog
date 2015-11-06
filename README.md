@@ -23,7 +23,7 @@ git log | ezchangelog-stream -p
 
 ## Example
 
-See [changelog](changelog.md)
+See [changelog](https://github.com/zoubin/ezchangelog/blob/master/changelog.md)
 
 ## ezchangelog
 
