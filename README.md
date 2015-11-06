@@ -9,11 +9,11 @@ npm i -g ezchangelog
 cd repo
 
 # create a new changelog.md file
-git log | ezchangelog
+ezchangelog
 
 # do some commits
 
 # prepend new changes
-git log | ezchangelog
+ezchangelog
 
 ```

@@ -1,22 +1,24 @@
-<!-- commit bba79892ac38dacf449a4634f73a61a0b35cf4e4 -->
+<!-- LATEST e2fc335 -->
 
-## v1.0.2 (2015-11-04)
+* [ [e2fc335](https://github.com/zoubin/ezchangelog/commit/e2fc335) ] changelog
 
-* remove timestamps for commits
+## [v1.0.2](https://github.com/zoubin/ezchangelog/commit/bba7989) (2015-11-04)
 
-* changelog
+* [ [8f3d008](https://github.com/zoubin/ezchangelog/commit/8f3d008) ] remove timestamps for commits
 
-## v1.0.1 (2015-11-04)
+* [ [913a1e4](https://github.com/zoubin/ezchangelog/commit/913a1e4) ] changelog
 
-* pretty tag output
+## [v1.0.1](https://github.com/zoubin/ezchangelog/commit/481d966) (2015-11-04)
 
-* package.json description
+* [ [b3aed3b](https://github.com/zoubin/ezchangelog/commit/b3aed3b) ] pretty tag output
 
-* changelog
+* [ [26e9612](https://github.com/zoubin/ezchangelog/commit/26e9612) ] package.json description
 
-## v1.0.0 (2015-11-04)
+* [ [c56cc5c](https://github.com/zoubin/ezchangelog/commit/c56cc5c) ] changelog
 
-* changelog
+## [v1.0.0](https://github.com/zoubin/ezchangelog/commit/cc25d28) (2015-11-04)
 
-* Initial commit
+* [ [74b5d29](https://github.com/zoubin/ezchangelog/commit/74b5d29) ] ezchangelog
+
+* [ [3cbfe55](https://github.com/zoubin/ezchangelog/commit/3cbfe55) ] Initial commit
 

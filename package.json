@@ -24,9 +24,8 @@
   },
   "homepage": "https://github.com/zoubin/ezchangelog#readme",
   "dependencies": {
+    "git-log-parser": "^1.2.0",
     "minimist": "^1.2.0",
-    "split2": "^1.0.0",
-    "stream-combiner2": "^1.1.1",
     "through2": "^2.0.0"
   },
   "devDependencies": {
