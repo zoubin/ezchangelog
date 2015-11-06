@@ -1,4 +1,6 @@
-<!-- LATEST de419ea -->
+<!-- LATEST 041a8f7 -->
+
+* [ 2015-11-06 [041a8f7](https://github.com/zoubin/ezchangelog/commit/041a8f7) ] Fix bin script
 
 ## [v3.0.2](https://github.com/zoubin/ezchangelog/commit/de419ea) (2015-11-06)
 

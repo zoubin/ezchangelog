@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-git log "$@" --no-merges | `dirname "$0"`/stream.js
+git log "$@" --no-merges | `dirname "$0"`/ezchangelog-stream.js
 
