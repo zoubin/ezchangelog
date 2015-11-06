@@ -21,6 +21,10 @@ git log | ezchangelog-stream -p
 
 ```
 
+## Example
+
+See [changelog](#changelog.md)
+
 ## ezchangelog
 
 Use it the way you do `git log`,
