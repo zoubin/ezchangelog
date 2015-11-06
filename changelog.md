@@ -1,4 +1,12 @@
-<!-- LATEST 4a22842 -->
+<!-- LATEST de419ea -->
+
+## [v3.0.2](https://github.com/zoubin/ezchangelog/commit/de419ea) (2015-11-06)
+
+* [ 2015-11-06 [fb3df59](https://github.com/zoubin/ezchangelog/commit/fb3df59) ] fix gulpfile, build bash scripts
+
+* [ 2015-11-06 [de1e526](https://github.com/zoubin/ezchangelog/commit/de1e526) ] Use absolute paths in readme
+
+* [ 2015-11-06 [2686d20](https://github.com/zoubin/ezchangelog/commit/2686d20) ] CHANGELOG
 
 ## [v3.0.1](https://github.com/zoubin/ezchangelog/commit/4a22842) (2015-11-06)
 
