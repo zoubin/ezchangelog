@@ -1,4 +1,8 @@
-<!-- LATEST e2b037c -->
+<!-- LATEST 7fd1997 -->
+
+## [v2.0.4](https://github.com/zoubin/ezchangelog/commit/7fd1997) (2015-11-06)
+
+* [ [a09a1f3](https://github.com/zoubin/ezchangelog/commit/a09a1f3) ] support before, after, author, merges, no-merges options
 
 * [ [e2b037c](https://github.com/zoubin/ezchangelog/commit/e2b037c) ] CHANGELOG
 
