@@ -1,12 +1,14 @@
-<!-- LATEST fe0eb73 -->
+<!-- LATEST 80e3ea6 -->
+
+* [ [80e3ea6](https://github.com/zoubin/ezchangelog/commit/80e3ea6) ] CHANGELOG
 
 ## [v2.0.0](https://github.com/zoubin/ezchangelog/commit/fe0eb73) (2015-11-06)
 
 * [ [51c18d3](https://github.com/zoubin/ezchangelog/commit/51c18d3) ] Refactor using git-log-parser
 
 No need to execute `git log`.
-Add links to commits.
 
+Add links to commits.
 
 * [ [e2fc335](https://github.com/zoubin/ezchangelog/commit/e2fc335) ] changelog
 
