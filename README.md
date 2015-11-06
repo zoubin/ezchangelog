@@ -44,9 +44,9 @@ Pass any valid arguments to `git log`.
 
 Options for `ezchangelog-stream`:
 
-`p, --print`: print the changelog contents rather than write to disk.
+`-p, --print`: print the changelog contents rather than write to disk.
 
-`f, --file`: specify the changelog file path.
+`-f, --file`: specify the changelog file path.
 
 ## package.json
 
@@ -64,5 +64,5 @@ There are links to all commits.
 `commits`: specify the base path for each commit.
 By default, commits are linked to github.
 
-`changelog`: specify you changelog file path
+`changelog`: specify the changelog file path
 
