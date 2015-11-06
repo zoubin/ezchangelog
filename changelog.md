@@ -1,4 +1,8 @@
-<!-- LATEST 041a8f7 -->
+<!-- LATEST afec967 -->
+
+## [v3.0.3](https://github.com/zoubin/ezchangelog/commit/afec967) (2015-11-06)
+
+* [ 2015-11-06 [a2bcae5](https://github.com/zoubin/ezchangelog/commit/a2bcae5) ] fix bin scripts
 
 * [ 2015-11-06 [041a8f7](https://github.com/zoubin/ezchangelog/commit/041a8f7) ] Fix bin script
 
