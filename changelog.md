@@ -1,4 +1,8 @@
-<!-- LATEST 19bc65e -->
+<!-- LATEST 1e62caf -->
+
+## [v2.0.2](https://github.com/zoubin/ezchangelog/commit/1e62caf) (2015-11-06)
+
+* [ [6befb18](https://github.com/zoubin/ezchangelog/commit/6befb18) ] blockquote message body
 
 ## [v2.0.1](https://github.com/zoubin/ezchangelog/commit/19bc65e) (2015-11-06)
 
@@ -10,9 +14,9 @@
 
 * [ [51c18d3](https://github.com/zoubin/ezchangelog/commit/51c18d3) ] Refactor using git-log-parser
 
->No need to execute `git log`.
+  >No need to execute `git log`.
 
->Add links to commits.
+  >Add links to commits.
 
 * [ [e2fc335](https://github.com/zoubin/ezchangelog/commit/e2fc335) ] changelog
 
