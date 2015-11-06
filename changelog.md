@@ -1,4 +1,6 @@
-<!-- LATEST 7cb15b2 -->
+<!-- LATEST e2b037c -->
+
+* [ [e2b037c](https://github.com/zoubin/ezchangelog/commit/e2b037c) ] CHANGELOG
 
 ## [v2.0.3](https://github.com/zoubin/ezchangelog/commit/7cb15b2) (2015-11-06)
 

@@ -4,10 +4,11 @@ var fs = require('fs')
 var thr = require('through2')
 var parser = require('git-log-parser')
 var exec = require('child_process').exec
+var pick = require('util-mix/pick')
 
 var argv = require('minimist')(process.argv.slice(2), {
-  string: ['file', 'before', 'after'],
-  boolean: ['print'],
+  string: ['file', 'before', 'after', 'author'],
+  boolean: ['print', 'merges'],
   alias: {
     p: 'print',
     f: 'file',
@@ -26,10 +27,15 @@ var tagList = getTagList().then(function (hashes) {
   }, {})
 })
 
+var parserOpts = pick(
+  ['before', 'after', 'author', 'merges'],
+  argv
+)
+
 lastCommit.then(function (hash) {
   return readFile(changelog).then(function (log) {
     var dest = argv.print ? process.stdout : fs.createWriteStream(changelog)
-    parser.parse()
+    parser.parse(parserOpts)
       .pipe(filter(hash))
       .pipe(toMarkdown())
       .pipe(append(log))

@@ -26,7 +26,8 @@
   "dependencies": {
     "git-log-parser": "^1.2.0",
     "minimist": "^1.2.0",
-    "through2": "^2.0.0"
+    "through2": "^2.0.0",
+    "util-mix": "^3.0.2"
   },
   "devDependencies": {
     "callback-sequence": "^1.2.1",

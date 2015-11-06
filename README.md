@@ -17,3 +17,7 @@ ezchangelog
 ezchangelog
 
 ```
+
+## Options
+
+Use `before`, `after`, `author`, `merges`, `no-merges` as you do with `git log`.
