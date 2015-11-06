@@ -1,4 +1,10 @@
-<!-- LATEST bdf0091 -->
+<!-- LATEST 415dc78 -->
+
+## [v3.0.5](https://github.com/zoubin/ezchangelog/commit/415dc78) (2015-11-06)
+
+* [ 2015-11-06 [e66f1b7](https://github.com/zoubin/ezchangelog/commit/e66f1b7) ] Ahh. I need sleep...
+
+* [ 2015-11-06 [bd6d36b](https://github.com/zoubin/ezchangelog/commit/bd6d36b) ] CHANGELOG
 
 ## [v3.0.4](https://github.com/zoubin/ezchangelog/commit/bdf0091) (2015-11-06)
 
