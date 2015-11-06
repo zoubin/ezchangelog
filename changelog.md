@@ -1,4 +1,8 @@
-<!-- LATEST 80e3ea6 -->
+<!-- LATEST 19bc65e -->
+
+## [v2.0.1](https://github.com/zoubin/ezchangelog/commit/19bc65e) (2015-11-06)
+
+* [ [cd6b61a](https://github.com/zoubin/ezchangelog/commit/cd6b61a) ] preserve newlines in commit message body
 
 * [ [80e3ea6](https://github.com/zoubin/ezchangelog/commit/80e3ea6) ] CHANGELOG
 
@@ -6,9 +10,9 @@
 
 * [ [51c18d3](https://github.com/zoubin/ezchangelog/commit/51c18d3) ] Refactor using git-log-parser
 
-No need to execute `git log`.
+>No need to execute `git log`.
 
-Add links to commits.
+>Add links to commits.
 
 * [ [e2fc335](https://github.com/zoubin/ezchangelog/commit/e2fc335) ] changelog
 

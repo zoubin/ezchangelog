@@ -147,7 +147,7 @@ function toMarkdown() {
     return wrapLink(ci.commit.short, ci.commit.short).then(function (link) {
       return '* [ ' + link + ' ] ' +
         ci.subject + '\n\n' +
-        (ci.body ? ci.body.replace(/\n/g, '\n\n') : '')
+        (ci.body ? '>' + ci.body.trim().replace(/\n/g, '\n\n>') + '\n\n' : '')
     })
   }
 
