@@ -4,7 +4,7 @@
   "description": "changelog",
   "bin": {
     "ezchangelog": "./bin/ezchangelog",
-    "ezchangelog-stream": "./bin/ezchangelog-stream.js"
+    "ezchangelog-stream": "./bin/stream.js"
   },
   "scripts": {
     "test": "gulp"
