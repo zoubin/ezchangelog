@@ -1,4 +1,18 @@
-<!-- LATEST 3b1762e -->
+<!-- LATEST 9138646 -->
+
+## [v3.0.0](https://github.com/zoubin/ezchangelog/commit/9138646) (2015-11-06)
+
+* [ 2015-11-06 [bcb97ae](https://github.com/zoubin/ezchangelog/commit/bcb97ae) ] Refactor code: support most `git log` options
+
+  >`ezchangelog-stream`: used in a unix pipeline
+
+  >`ezchangelog`: directly executed
+
+  >`git-log-parser` is no longer used in this package, cause it takes the
+
+  >responsibility of parsing `git log` arguments, which makes things a
+
+  >little messy.
 
 * [ 2015-11-06 [3b1762e](https://github.com/zoubin/ezchangelog/commit/3b1762e) ] CAHNGELOG
 
