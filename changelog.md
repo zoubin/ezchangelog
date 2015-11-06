@@ -1,4 +1,10 @@
-<!-- LATEST afec967 -->
+<!-- LATEST bdf0091 -->
+
+## [v3.0.4](https://github.com/zoubin/ezchangelog/commit/bdf0091) (2015-11-06)
+
+* [ 2015-11-06 [92d23f8](https://github.com/zoubin/ezchangelog/commit/92d23f8) ] Really fix bin scripts
+
+* [ 2015-11-06 [bf4adf9](https://github.com/zoubin/ezchangelog/commit/bf4adf9) ] CHANGELOG
 
 ## [v3.0.3](https://github.com/zoubin/ezchangelog/commit/afec967) (2015-11-06)
 
