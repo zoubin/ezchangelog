@@ -1,4 +1,8 @@
-<!-- LATEST 1e62caf -->
+<!-- LATEST 7cb15b2 -->
+
+## [v2.0.3](https://github.com/zoubin/ezchangelog/commit/7cb15b2) (2015-11-06)
+
+* [ [ac6efbe](https://github.com/zoubin/ezchangelog/commit/ac6efbe) ] add identation (2 spaces) for message body
 
 ## [v2.0.2](https://github.com/zoubin/ezchangelog/commit/1e62caf) (2015-11-06)
 
