@@ -10,9 +10,6 @@ var argv = minimist(
   {
     string: ['out'],
     boolean: ['print', 'incremental'],
-    default: {
-      incremental: true,
-    },
     alias: {
       p: 'print',
       o: 'out',
@@ -30,14 +27,12 @@ getConfig(argv.out)
     })
 })
 .then(function (conf) {
-  var dest = argv.print
+  var dest = argv.print || !conf.out
     ? process.stdout
     : fs.createWriteStream(conf.out)
   var formatter = changeLog.format({ history: conf.source })
   if (!argv.incremental) {
     formatter.get('filter').pop()
-    formatter.get('wrap').pop()
-  } else if (argv.print) {
     formatter.get('wrap').pop()
   }
   process.stdin
@@ -53,7 +48,7 @@ function readFile(file) {
     fs.readFile(file, 'utf8', function (err, s) {
       resolve(s)
     })
-  })
+  }).catch(function () {})
 }
 
 function getConfig(out) {
@@ -69,7 +64,6 @@ function getConfig(out) {
     if (out) {
       conf.out = out
     }
-    conf.out = conf.out || 'changelog.md'
     return conf
   })
 }
