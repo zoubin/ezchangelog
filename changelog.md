@@ -1,4 +1,18 @@
-<!-- LATEST 10910b2 -->
+<!-- LATEST 7c82ba6 -->
+
+## [v4.0.2](https://github.com/zoubin/ezchangelog/commit/7c82ba6) (2015-11-07)
+
+* [ 2015-11-07 [c43c27e](https://github.com/zoubin/ezchangelog/commit/c43c27e) ] `ezchangelog` use -o changelog.md
+
+## [v4.0.1](https://github.com/zoubin/ezchangelog/commit/a3f650b) (2015-11-07)
+
+* [ 2015-11-07 [db3606c](https://github.com/zoubin/ezchangelog/commit/db3606c) ] update readme
+
+* [ 2015-11-07 [8fd2d75](https://github.com/zoubin/ezchangelog/commit/8fd2d75) ] incremental defaults to false
+
+* [ 2015-11-07 [3de8b20](https://github.com/zoubin/ezchangelog/commit/3de8b20) ] fix lint errors
+
+* [ 2015-11-07 [9b1b4f9](https://github.com/zoubin/ezchangelog/commit/9b1b4f9) ] CHANGELOG
 
 ## [v4.0.0](https://github.com/zoubin/ezchangelog/commit/10910b2) (2015-11-07)
 
