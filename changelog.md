@@ -1,4 +1,10 @@
-<!-- LATEST 7c82ba6 -->
+<!-- LATEST 3bf9055 -->
+
+## [v4.0.3](https://github.com/zoubin/ezchangelog/commit/3bf9055) (2015-11-07)
+
+* [ 2015-11-07 [87abe8e](https://github.com/zoubin/ezchangelog/commit/87abe8e) ] fix readme, `changelog` rather than `ezchangelog` in package.json
+
+* [ 2015-11-07 [5169487](https://github.com/zoubin/ezchangelog/commit/5169487) ] CHANGELOG
 
 ## [v4.0.2](https://github.com/zoubin/ezchangelog/commit/7c82ba6) (2015-11-07)
 
