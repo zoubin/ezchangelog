@@ -1,6 +1,6 @@
 {
   "name": "ezchangelog",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "changelog",
   "bin": {
     "ezchangelog": "./bin/cmd",
