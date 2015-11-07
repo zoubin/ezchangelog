@@ -3,8 +3,8 @@
   "version": "3.0.5",
   "description": "changelog",
   "bin": {
-    "ezchangelog": "./bin/ezchangelog",
-    "ezchangelog-stream": "./bin/stream.js"
+    "ezchangelog": "./bin/cmd",
+    "ezchangelogStream": "./bin/stream.js"
   },
   "scripts": {
     "test": "gulp"
@@ -25,11 +25,11 @@
   },
   "homepage": "https://github.com/zoubin/ezchangelog#readme",
   "dependencies": {
+    "labeled-stream-splicer": "^2.0.0",
     "minimist": "^1.2.0",
     "split2": "^1.0.0",
     "stream-combiner2": "^1.1.1",
-    "through2": "^2.0.0",
-    "util-mix": "^3.0.2"
+    "through2": "^2.0.0"
   },
   "devDependencies": {
     "callback-sequence": "^1.2.1",

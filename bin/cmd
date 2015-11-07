@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+git log "$@" --no-merges | ezchangelogStream
+
