@@ -17,7 +17,7 @@ ezchangelog
 ezchangelog
 
 # Print the new changelog contents
-git log | ezchangelog-stream -p
+git log | ezchangelogStream -p
 
 ```
 
@@ -32,7 +32,7 @@ and your changelog file will be updated.
 
 By default, `--no-merges` is enabled.
 
-## ezchangelog-stream
+## ezchangelogStream
 Specify more custom options.
 
 ```bash
@@ -46,23 +46,26 @@ Options for `ezchangelog-stream`:
 
 `-p, --print`: print the changelog contents rather than write to disk.
 
-`-f, --file`: specify the changelog file path.
+`-o, --out`: specify the changelog file path.
+
+`--inc, --incremental`: used together with `--out` to update changelog incrementally.
+
 
 ## package.json
 
 ```json
 {
   "ezchangelog": {
-    "commits": "https://github.com/zoubin/ezchangelog/commit/",
-    "changelog": "changelog.md"
+    "baseUrl": "https://github.com/zoubin/ezchangelog/commit/",
+    "out": "changelog.md"
   }
 }
 ```
 
 There are links to all commits.
 
-`commits`: specify the base path for each commit.
+`baseUrl`: specify the base path for each commit.
 By default, commits are linked to github.
 
-`changelog`: specify the changelog file path
+`out`: specify the changelog file path
 
