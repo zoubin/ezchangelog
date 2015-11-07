@@ -1,4 +1,18 @@
-<!-- LATEST 415dc78 -->
+<!-- LATEST 10910b2 -->
+
+## [v4.0.0](https://github.com/zoubin/ezchangelog/commit/10910b2) (2015-11-07)
+
+* [ 2015-11-07 [a1db65e](https://github.com/zoubin/ezchangelog/commit/a1db65e) ] modify old changelog
+
+* [ 2015-11-07 [bab9bcd](https://github.com/zoubin/ezchangelog/commit/bab9bcd) ] Refactor code.
+    
+    * custom parser
+    * clear logic for format, parse
+    * rename bin scripts. `ezchangelogStream`.
+
+* [ 2015-11-06 [e37e0c4](https://github.com/zoubin/ezchangelog/commit/e37e0c4) ] fix word spell in readme
+
+* [ 2015-11-06 [d61fe24](https://github.com/zoubin/ezchangelog/commit/d61fe24) ] CHANGELOG
 
 ## [v3.0.5](https://github.com/zoubin/ezchangelog/commit/415dc78) (2015-11-06)
 
