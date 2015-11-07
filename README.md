@@ -55,7 +55,7 @@ Options for `ezchangelog-stream`:
 
 ```json
 {
-  "ezchangelog": {
+  "changelog": {
     "baseUrl": "https://github.com/zoubin/ezchangelog/commit/",
     "out": "changelog.md"
   }
