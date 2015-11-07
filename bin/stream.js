@@ -10,7 +10,7 @@ var argv = minimist(
   {
     string: ['out'],
     boolean: ['print', 'incremental'],
-    'default': {
+    default: {
       incremental: true,
     },
     alias: {
