@@ -3,11 +3,12 @@
   "version": "4.0.3",
   "description": "changelog",
   "bin": {
-    "ezchangelog": "./bin/cmd",
-    "ezchangelogStream": "./bin/stream.js"
+    "changelog": "./bin/cmd.js"
   },
   "scripts": {
-    "test": "gulp"
+    "test": "npm run lint && tap --cov test/*.js",
+    "lint": "eslint *.js 'lib/**/*.js' test/*.js bin/*.js",
+    "coveralls": "COVERALLS_REPO_TOKEN=REPO_TOKEN npm test"
   },
   "repository": {
     "type": "git",
@@ -25,16 +26,20 @@
   },
   "homepage": "https://github.com/zoubin/ezchangelog#readme",
   "dependencies": {
+    "commander": "^2.9.0",
+    "duplexer2": "^0.1.4",
     "labeled-stream-splicer": "^2.0.0",
-    "minimist": "^1.2.0",
+    "node-promisify": "^1.0.0",
     "split2": "^1.0.0",
     "stream-combiner2": "^1.1.1",
-    "through2": "^2.0.0"
+    "through2": "^2.0.0",
+    "util-mix": "^3.0.2"
   },
   "devDependencies": {
-    "callback-sequence": "^1.2.1",
-    "del": "^2.0.2",
-    "gulp": "^3.9.0",
-    "gulp-eslint": "^1.0.0"
-  }
+    "concat-stream": "^1.5.1",
+    "del": "^2.1.0",
+    "eslint": "^1.10.1",
+    "tap": "^2.3.1"
+  },
+  "main": "index.js"
 }

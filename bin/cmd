@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-git log "$@" --no-merges | ezchangelogStream --incremental -o changelog.md
-
