@@ -26,10 +26,8 @@ test('default command line conf', function(t) {
   return reset()
     .then(function () {
       return buildConf({}).then(function (conf) {
-        t.same(conf, {
-          out: 'changelog.md',
-          baseUrl: 'https://github.com/zoubin/ezchangelog/commit/',
-        }, 'default config')
+        t.equal(conf.out, 'changelog.md')
+        t.ok(/zoubin\/ezchangelog\/commit\/$/.test(conf.baseUrl))
       })
     })
     .then(reset)
