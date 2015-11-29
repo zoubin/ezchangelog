@@ -1,5 +1,11 @@
 # ezchangelog
-Log changes easily.
+Make it easy to update changelog with commit messages.
+
+[![version](https://img.shields.io/npm/v/ezchangelog.svg)](https://www.npmjs.org/package/ezchangelog)
+[![status](https://travis-ci.org/zoubin/ezchangelog.svg?branch=master)](https://travis-ci.org/zoubin/ezchangelog)
+[![coverage](https://img.shields.io/coveralls/zoubin/ezchangelog.svg)](https://coveralls.io/github/zoubin/ezchangelog)
+[![dependencies](https://david-dm.org/zoubin/ezchangelog.svg)](https://david-dm.org/zoubin/ezchangelog)
+[![devDependencies](https://david-dm.org/zoubin/ezchangelog/dev-status.svg)](https://david-dm.org/zoubin/ezchangelog#info=devDependencies)
 
 ## Usage
 
@@ -9,15 +15,15 @@ npm i -g ezchangelog
 cd repo
 
 # create a new changelog.md file
-ezchangelog
+changelog
 
 # do some commits
 
 # prepend new changes
-ezchangelog
+changelog
 
 # Print the new changelog contents
-git log | ezchangelogStream -p
+git log --before Nov.10 | changelog
 
 ```
 
@@ -25,33 +31,27 @@ git log | ezchangelogStream -p
 
 See [changelog](https://github.com/zoubin/ezchangelog/blob/master/changelog.md)
 
-## ezchangelog
+## Command line
 
-Use it the way you do `git log`,
-and your changelog file will be updated.
+`changelog -h` to see options.
 
-By default, `--no-merges` is enabled.
+There are two ways in the command line.
 
-## ezchangelogStream
-Specify more custom options.
+The following command will call `git log --no-merges` to generate changes info:
 
 ```bash
-git log | ezchangelog-stream
+changelog [options]
 
 ```
 
-Pass any valid arguments to `git log`.
+You can also pipe the changes into it:
 
-Options for `ezchangelog-stream`:
+```bash
+git log --before Nov.10 | changelog [options]
 
-`-p, --print`: print the changelog contents rather than write to disk.
+```
 
-`-o, --out`: specify the changelog file path.
-
-`--inc, --incremental`: used together with `--out` to update changelog incrementally.
-
-
-## package.json
+### package.json
 
 ```json
 {

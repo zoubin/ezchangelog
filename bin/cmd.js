@@ -9,7 +9,7 @@ var program = new Command('changelog')
 
 program
   .version(require('../package.json').version)
-  .usage('[options] -- [git_log_args] OR git log [git_log_options] | changelog [options]')
+  .usage('[options] OR git log [git_log_options] | changelog [options]')
   .option('-o, --out <file>', 'The changelog file path. You can also specify it in the package.json `changelog.out` field.')
   .option('-p, --print', 'Just print the contents, no disk writing.')
   .option('-I, --no-incremental', 'Overwrite the original changelog instead of prepending new changes.')
