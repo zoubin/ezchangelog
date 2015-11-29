@@ -1,0 +1,19 @@
+commit 9c5829ce45567bedccda9beb7f5de17574ea9437
+Author: zoubin <zoubin04@gmail.com>
+Date:   Sat Nov 7 18:42:35 2015 +0800
+
+    CHANGELOG
+
+commit 3bf9055b732cc23a9c14f295ff91f48aed5ef31a
+Author: zoubin <zoubin04@gmail.com>
+Date:   Sat Nov 7 18:41:37 2015 +0800
+
+    4.0.3
+
+commit 87abe8e12374079f73fc85c432604642059806ae
+Author: zoubin <zoubin04@gmail.com>
+Date:   Sat Nov 7 18:41:32 2015 +0800
+
+    fix readme
+    add more tests
+

@@ -1,0 +1,49 @@
+commit 9c5829ce45567bedccda9beb7f5de17574ea9437
+Author: zoubin <zoubin04@gmail.com>
+Date:   Sat Nov 7 18:42:35 2015 +0800
+
+    CHANGELOG
+
+commit 3bf9055b732cc23a9c14f295ff91f48aed5ef31a
+Author: zoubin <zoubin04@gmail.com>
+Date:   Sat Nov 7 18:41:37 2015 +0800
+
+    4.0.3
+
+commit 87abe8e12374079f73fc85c432604642059806ae
+Author: zoubin <zoubin04@gmail.com>
+Date:   Sat Nov 7 18:41:32 2015 +0800
+
+    fix readme
+    add more tests
+
+commit 5169487b2d3333017bd0976d8fdb1330cef7f1b8
+Author: zoubin <zoubin04@gmail.com>
+Date:   Sat Nov 7 18:26:43 2015 +0800
+
+    CHANGELOG
+
+commit 7c82ba6925f91a9fdba10760535698b5144491a2
+Author: zoubin <zoubin04@gmail.com>
+Date:   Sat Nov 7 18:23:05 2015 +0800
+
+    4.0.2
+
+commit c43c27eb4c6baabeab1454a6846fba36fc436acd
+Author: zoubin <zoubin04@gmail.com>
+Date:   Sat Nov 7 18:22:55 2015 +0800
+
+    `ezchangelog` use -o changelog.md
+
+commit a3f650b55e8b5993e3bbb42c676bc9cee7e0bcd3
+Author: zoubin <zoubin04@gmail.com>
+Date:   Sat Nov 7 18:17:31 2015 +0800
+
+    4.0.1
+
+commit db3606c17c8280be0962ab6b6904d2098ae1d6b2
+Author: zoubin <zoubin04@gmail.com>
+Date:   Sat Nov 7 18:17:22 2015 +0800
+
+    update readme
+
