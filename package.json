@@ -1,6 +1,6 @@
 {
   "name": "ezchangelog",
-  "version": "4.0.3",
+  "version": "5.0.0",
   "description": "changelog",
   "bin": {
     "changelog": "./bin/cmd.js"
