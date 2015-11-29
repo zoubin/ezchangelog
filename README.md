@@ -19,10 +19,10 @@ changelog
 
 # do some commits
 
-# prepend new changes
+# prepend new changes use `git log --no-merges`
 changelog
 
-# Print the new changelog contents
+# prepend new changes
 git log --before Nov.10 | changelog
 
 ```
