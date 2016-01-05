@@ -39,7 +39,7 @@
     "concat-stream": "^1.5.1",
     "del": "^2.1.0",
     "eslint": "^1.10.1",
-    "tap": "^2.3.1"
+    "tap": "^5.0.0"
   },
   "main": "index.js"
 }
