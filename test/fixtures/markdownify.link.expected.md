@@ -1,5 +1,3 @@
-<!-- 9c5829c 1446892955000 -->
-
 * [[`9c5829c`](https://github.com/zoubin/ezchangelog/commit/9c5829c)] CHANGELOG
 
 ## [v4.0.3](https://github.com/zoubin/ezchangelog/commit/3bf9055) (2015-11-07)

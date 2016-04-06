@@ -1,15 +1,15 @@
 var test = require('tap').test
-var formatter = require('../lib/formatter')
+var formatter = require('../lib/markdownify')
 var path = require('path')
 var fixtures = path.resolve.bind(path, __dirname, 'fixtures')
 var fs = require('fs')
 var concat = require('concat-stream')
-var rows = require(fixtures('sample.commit.expected'))
+var rows = require(fixtures('commit.expected'))
 
-test('formatter, has link', function(t) {
+test('markdownify, has link', function(t) {
   t.plan(1)
   var expected = fs.readFileSync(
-    fixtures('formatter.link.expected.md'), 'utf8'
+    fixtures('markdownify.link.expected.md'), 'utf8'
   )
   var stream = formatter()
   stream.pipe(concat({ encoding: 'string' }, function (md) {
@@ -21,10 +21,10 @@ test('formatter, has link', function(t) {
   stream.end()
 })
 
-test('formatter, has no link', function(t) {
+test('markdownify, has no link', function(t) {
   t.plan(1)
   var expected = fs.readFileSync(
-    fixtures('formatter.expected.md'), 'utf8'
+    fixtures('markdownify.expected.md'), 'utf8'
   )
   var stream = formatter()
   stream.pipe(concat({ encoding: 'string' }, function (md) {

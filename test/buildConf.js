@@ -21,7 +21,7 @@ function reset() {
 }
 
 test('default command line conf', function(t) {
-  var history = fs.readFileSync(fixtures('format.no.incremental.expected.md'), 'utf8')
+  var history = fs.readFileSync(fixtures('expected.md'), 'utf8')
 
   return reset()
     .then(function () {

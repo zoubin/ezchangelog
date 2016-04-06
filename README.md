@@ -1,11 +1,11 @@
 # ezchangelog
-Make it easy to update changelog with commit messages.
-
 [![version](https://img.shields.io/npm/v/ezchangelog.svg)](https://www.npmjs.org/package/ezchangelog)
 [![status](https://travis-ci.org/zoubin/ezchangelog.svg?branch=master)](https://travis-ci.org/zoubin/ezchangelog)
 [![coverage](https://img.shields.io/coveralls/zoubin/ezchangelog.svg)](https://coveralls.io/github/zoubin/ezchangelog)
 [![dependencies](https://david-dm.org/zoubin/ezchangelog.svg)](https://david-dm.org/zoubin/ezchangelog)
 [![devDependencies](https://david-dm.org/zoubin/ezchangelog/dev-status.svg)](https://david-dm.org/zoubin/ezchangelog#info=devDependencies)
+
+Make it easy to update changelog with commit messages.
 
 ## Usage
 
@@ -57,6 +57,7 @@ git log --before Nov.10 | changelog [options]
 {
   "changelog": {
     "baseUrl": "https://github.com/zoubin/ezchangelog/commit/",
+    "plugin": ["pluginName"],
     "out": "changelog.md"
   }
 }
@@ -68,4 +69,112 @@ There are links to all commits.
 By default, commits are linked to github.
 
 `out`: specify the changelog file path
+
+## API
+
+```js
+var changelog = require('ezchangelog')
+
+```
+
+### changelog(opts)
+Return a transform to process `git log` outputs.
+
+**opts.baseUrl**
+
+Specify the url base for commits.
+
+Type: `String`
+
+**opts.plugin**
+
+Specify extra plugins to apply to the pipeline.
+
+Type: `Array`
+
+Each element should be an `Array`,
+if the plugin should take an extra argument besides the `Changelog` instance.
+
+```js
+{
+  plugin: [ [function pluginFn(instance, opt) {}, opt] ]
+}
+
+```
+
+### changelog.Changelog
+The constructor for loggers.
+
+You can process the `pipeline` property and the `plugin` function.
+
+**pipeline**
+
+A duplex created by [labeled-stream-splicer],
+assembling a group of transforms to process the log.
+
+There are two main phases:
+* parse: containing sub-phases: split, commit, tag, url.
+  The main purpose of this phase is to create commit objects.
+* format: containing one sub-phase: markdownify.
+  Commit objects are formatted to markdown in this phase.
+
+The default commit object is like:
+```js
+{
+  commit: {
+    // commit sha1
+    long: '3bf9055b732cc23a9c14f295ff91f48aed5ef31a',
+    short: '3bf9055',
+  },
+  committer: {
+    // commit date
+    date: new Date('Sat Nov 7 18:41:37 2015 +0800'),
+  },
+  // raw message lines
+  messages: ['', '    4.0.3', ''],
+  // raw headers before the messages
+  headers: [
+    ['Author', 'zoubin <zoubin04@gmail.com>'],
+    ['Date', 'Sat Nov 7 18:41:37 2015 +0800'],
+  ],
+  // the first non-empty message line
+  subject: '4.0.3',
+  // other message lines
+  body: '',
+  // git tag
+  tag: 'v4.0.3',
+  // link to the commit. opts.baseUrl should be specified.
+  url: 'https://github.com/zoubin/ezchangelog/commit/3bf9055',
+}
+
+```
+
+You can manipulate the `pipeline` in the way [labeled-stream-splicer] supports.
+
+**plugin**
+
+Type: `Array`
+
+Each element is a plugin with optional argument.
+
+A plugin is used to manipulate the `pipeline` property:
+
+```js
+var Changelog = require('ezchangelog').Changelog
+var c = new Changelog()
+c.plugin(fn)
+
+source.pipe(c.pipeline).pipe(dest)
+
+funciton fn(c, opts) {
+  // parse emails
+  c.pipeline.get('parse').push(emailParser)
+
+  // replace the default formatter with a custom one
+  c.pipeline.get('format').splice('markdownify', 1, myOwesomeFormatter)
+}
+
+```
+
+[labeled-stream-splicer]: https://github.com/substack/labeled-stream-splicer
 

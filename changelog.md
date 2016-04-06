@@ -1,4 +1,8 @@
-<!-- 30d3351 1448865814000 -->
+<!-- fbfee83 1451975113000 -->
+
+* [[`fbfee83`](https://github.com/zoubin/ezchangelog/commit/fbfee83)] Update tap
+
+* [[`be3f868`](https://github.com/zoubin/ezchangelog/commit/be3f868)] CHANGELOG
 
 ## [v5.0.2](https://github.com/zoubin/ezchangelog/commit/30d3351) (2015-11-30)
 

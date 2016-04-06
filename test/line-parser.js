@@ -1,5 +1,5 @@
 var test = require('tap').test
-var parser = require('..').parser.line
+var parser = require('../lib/parser/line')
 var path = require('path')
 var fixtures = path.resolve.bind(path, __dirname, 'fixtures')
 var split = require('split2')

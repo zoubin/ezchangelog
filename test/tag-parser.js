@@ -1,5 +1,5 @@
 var test = require('tap').test
-var parser = require('..').parser.tag
+var parser = require('../lib/parser/tag')
 var concat = require('concat-stream')
 
 var expected = [
