@@ -1,4 +1,12 @@
-<!-- fbfee83 1451975113000 -->
+<!-- c8a7d85 1459933957000 -->
+
+## [v6.0.0](https://github.com/zoubin/ezchangelog/commit/c8a7d85) (2016-04-06)
+
+* [[`8d8a523`](https://github.com/zoubin/ezchangelog/commit/8d8a523)] make eslint happy
+
+* [[`20881b7`](https://github.com/zoubin/ezchangelog/commit/20881b7)] Add test for plugin
+
+* [[`cd2c351`](https://github.com/zoubin/ezchangelog/commit/cd2c351)] Refactor: support plugins
 
 * [[`fbfee83`](https://github.com/zoubin/ezchangelog/commit/fbfee83)] Update tap
 
