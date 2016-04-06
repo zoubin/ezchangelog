@@ -10,6 +10,7 @@ var markdownify = require('./lib/markdownify')
 
 function Changelog(opts) {
   opts = opts || {}
+  this._options = opts
   this.pipeline = splicer.obj([
     'parse', [
       'split', split(),
@@ -42,9 +43,9 @@ Changelog.prototype.plugin = function (p, opts) {
 Changelog.prototype.resolve = function (id) {
   var parent = { basedir: process.cwd() }
   try {
-    return resolve.sync(p, parent)
+    return resolve.sync(id, parent)
   } catch (e) {
-    return resolve.sync(path.resolve(p), parent)
+    return resolve.sync(path.resolve(id), parent)
   }
 }
 

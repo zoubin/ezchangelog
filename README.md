@@ -113,8 +113,41 @@ A duplex created by [labeled-stream-splicer],
 assembling a group of transforms to process the log.
 
 There are two main phases:
-* parse: containing sub-phases: split, commit, tag, url. The main purpose of this phase is to create commit objects.
-* format: containing one sub-phase: markdownify. Commit objects are formatted to markdown in this phase.
+* parse: containing sub-phases: split, commit, tag, url.
+  The main purpose of this phase is to create commit objects.
+* format: containing one sub-phase: markdownify.
+  Commit objects are formatted to markdown in this phase.
+
+The default commit object is like:
+```js
+{
+  commit: {
+    // commit sha1
+    long: '3bf9055b732cc23a9c14f295ff91f48aed5ef31a',
+    short: '3bf9055',
+  },
+  committer: {
+    // commit date
+    date: new Date('Sat Nov 7 18:41:37 2015 +0800'),
+  },
+  // raw message lines
+  messages: ['', '    4.0.3', ''],
+  // raw headers before the messages
+  headers: [
+    ['Author', 'zoubin <zoubin04@gmail.com>'],
+    ['Date', 'Sat Nov 7 18:41:37 2015 +0800'],
+  ],
+  // the first non-empty message line
+  subject: '4.0.3',
+  // other message lines
+  body: '',
+  // git tag
+  tag: 'v4.0.3',
+  // link to the commit. opts.baseUrl should be specified.
+  url: 'https://github.com/zoubin/ezchangelog/commit/3bf9055',
+}
+
+```
 
 You can manipulate the `pipeline` in the way [labeled-stream-splicer] supports.
 
@@ -142,4 +175,6 @@ funciton fn(c, opts) {
 }
 
 ```
+
+[labeled-stream-splicer]: https://github.com/substack/labeled-stream-splicer
 
