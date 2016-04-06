@@ -1,9 +1,8 @@
+var exec = require('../lib/exec')
 var promisify = require('node-promisify')
 var fs = require('fs')
 var path = require('path')
 var readFile = promisify(fs.readFile)
-var getGithubCommitBaseUrl = require('../lib/getGithubCommitBaseUrl')
-var pick = require('util-mix/pick')
 
 module.exports = function (opts) {
   return Promise.resolve()
@@ -14,11 +13,15 @@ module.exports = function (opts) {
       return {}
     })
     .then(function (conf) {
-      return pick(
-        ['out', 'baseUrl'],
-        { out: 'changelog.md' },
-        conf, opts
-      )
+      var o = {}
+      o.out = opts.out || conf.out || 'changelog.md'
+      o.baseUrl = opts.baseUrl == null
+        ? conf.baseUrl
+        : opts.baseUrl
+      if (conf.plugin != null) {
+        o.plugin = conf.plugin
+      }
+      return o
     })
     .then(function (conf) {
       if (conf.out && opts.incremental) {
@@ -41,5 +44,15 @@ module.exports = function (opts) {
         })
       }
       return conf
+    })
+}
+
+function getGithubCommitBaseUrl() {
+  return exec('git ls-remote --get-url origin')
+    .then(function (line) {
+      return line && line.split(':')[1].trim().slice(0, -4)
+    })
+    .then(function (repo) {
+      return repo && 'https://github.com/' + repo + '/commit/'
     })
 }

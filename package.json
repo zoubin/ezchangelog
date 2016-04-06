@@ -6,9 +6,10 @@
     "changelog": "./bin/cmd.js"
   },
   "scripts": {
-    "test": "npm run lint && tap --cov test/*.js",
+    "test": "npm run lint && tap test/*.js",
+    "cov": "tap --cov test/*.js",
     "lint": "eslint *.js 'lib/**/*.js' test/*.js bin/*.js",
-    "coveralls": "COVERALLS_REPO_TOKEN=HQ3CBBvuETwwTRja03i5kPulgZdzvpfxK npm test"
+    "coveralls": "COVERALLS_REPO_TOKEN=HQ3CBBvuETwwTRja03i5kPulgZdzvpfxK npm run cov"
   },
   "repository": {
     "type": "git",
@@ -30,15 +31,15 @@
     "duplexer2": "^0.1.4",
     "labeled-stream-splicer": "^2.0.0",
     "node-promisify": "^1.0.0",
+    "resolve": "^1.1.7",
     "split2": "^1.0.0",
     "stream-combiner2": "^1.1.1",
-    "through2": "^2.0.0",
-    "util-mix": "^3.0.2"
+    "through2": "^2.0.0"
   },
   "devDependencies": {
     "concat-stream": "^1.5.1",
     "del": "^2.1.0",
-    "eslint": "^1.10.1",
+    "eslint": "^2.0.0",
     "tap": "^5.0.0"
   },
   "main": "index.js"

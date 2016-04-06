@@ -1,5 +1,5 @@
 var test = require('tap').test
-var parser = require('..').parser.url
+var parser = require('../lib/parser/url')
 var concat = require('concat-stream')
 
 test('url parser, no baseUrl', function(t) {
